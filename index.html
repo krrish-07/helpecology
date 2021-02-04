@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>he</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous">
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+    #banner {
+        background-image: url(z.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 100vh;
+        top: 0%;
+        left: 0%;
+        position: relative;
+        background-position: center;
+    }
+
+    .bg {
+        position: absolute;
+    }
+
+    .welcome {
+        letter-spacing: 0.4rem;
+        font-family: "Londrina Outline", cursive;
+        font-size: 7.3rem;
+        margin-top: 11.5rem;
+        margin-left: 6.8rem;
+        text-transform: capitalize;
+        color: #eea16d;
+        letter-spacing: 0.7rem;
+    }
+
+    .welcome1 {
+        letter-spacing: 0.4rem;
+        font-family: "Londrina Outline", cursive;
+        font-size: 7.3rem;
+        margin-left: 6.8rem;
+        text-transform: capitalize;
+        color: #eea16d;
+        letter-spacing: 0.7rem;
+    }
+
+    .extra {
+        font-family: "Bebas Neue", cursive;
+        color: #fffdd0;
+        font-size: 7.3rem;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 30rem;
+        margin: auto;
+        margin-left: 80rem;
+        margin-top: -10.2rem;
+    }
+
+    .navlink li a {
+        text-decoration: none;
+        color: wheat;
+        font-size: 1.49rem;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .navlink li a:hover {
+        text-decoration: none;
+        color: wheat;
+        border-bottom: 2px solid #eea16d;
+        font-size: 1.49rem;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .navlink {
+        padding: 2.3rem;
+    }
+
+    .contribute {
+        padding: 1.3rem;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid #eea16d;
+        color: #fffdd0;
+        border-spacing: 2rem;
+        border-radius: 1.02rem;
+        font-family: "Montserrat";
+        margin-top: 3rem;
+        margin-left: 8rem;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        outline: none;
+    }
+
+    .contribute:hover {
+        background: linear-gradient(#eea16d, wheat);
+        color: #211517;
+        transform: scale(1.079);
+        box-shadow: 0 0px 10px rgba(238, 161, 109, 0.5);
+        font-weight: 900;
+    }
+
+    .regis {
+        border: 2px solid #eea16d;
+        text-decoration: none;
+        color: wheat;
+        border-radius: 1.02rem;
+        float: right;
+        clear: both;
+        position: relative;
+        top: -5.3rem;
+        padding: 0.8rem 1.9rem;
+        font-size: 1.49rem;
+        font-family: "Montserrat", sans-serif;
+        margin-right: 5.9rem;
+        transition: all 0.3s;
+    }
+
+    .regis:hover {
+        background: linear-gradient(#eea16d, wheat);
+        color: #211517;
+        transform: scale(1.059);
+        box-shadow: 0 0px 10px rgba(238, 161, 109, 0.5);
+        font-weight: 900;
+    }
+
+    .logo {
+        width: 11.3rem;
+        height: 11.3rem;
+        margin-left: 3.8rem;
+        margin-top: -1.75rem;
+    }
+
+    .fa-instagram {
+        float: right;
+        clear: both;
+        position: relative;
+        top: 13rem;
+        margin-right: 3rem;
+        color: #eea16d;
+        margin-top: 3rem;
+        transition: all 0.3s;
+    }
+
+    .fa-instagram:hover {
+        transform: scale(1.3);
+    }
+
+    .fa-facebook {
+        float: right;
+        clear: both;
+        top: 3rem;
+        position: relative;
+        margin-right: 3.5rem;
+        color: #eea16d;
+        transition: all 0.3s;
+    }
+
+    .fa-facebook:hover {
+        transform: scale(1.3);
+    }
+
+    .fa-twitter {
+        float: right;
+        clear: both;
+        position: relative;
+        margin-right: 2.8rem;
+        color: #eea16d;
+        top: 14rem;
+        transition: all 0.3s;
+    }
+
+    .fa-twitter:hover {
+        transform: scale(1.3);
+    }
+
+    .fa-linkedin {
+        float: right;
+        clear: both;
+        position: relative;
+        right: 2.8rem;
+        color: #eea16d;
+        top: 17.5rem;
+        transition: all 0.3s;
+    }
+
+    .fa-linkedin:hover {
+        transform: scale(1.3);
+    }
+
+    #aboutus {
+        background-color: #211517;
+        scroll-padding: 0%;
+        width: auto;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .may {
+        position: relative;
+        bottom: 13.9rem;
+        left: 8rem;
+        width: 68rem;
+        height: auto;
+    }
+
+    .contentp {
+        text-align: justify;
+        width: 50rem;
+        float: right;
+        clear: both;
+        margin-right: 6rem;
+        font-size: 2rem;
+        font-family: "Montserrat";
+        color: wheat;
+    }
+
+    .lrnmore {
+        position: relative;
+        float: right;
+        clear: both;
+        bottom: 18rem;
+        right: 37.52rem;
+        padding: 1.5rem 2.5rem;
+        border-radius: 1.2rem;
+        border: 2px solid #eea16d;
+        outline: none;
+        background: transparent;
+        color: wheat;
+        font-size: 1.6rem;
+        font-family: "Montserrat";
+
+        transition: all 0.3s;
+    }
+
+    .lrnmore:hover {
+        background: linear-gradient(#eea16d, wheat);
+        color: #211517;
+        transform: scale(1.059);
+        box-shadow: 0 0px 10px rgba(238, 161, 109, 0.5);
+        font-weight: 600;
+    }
+
+
+    #contact {
+        background: #211417;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        height: 100vh;
+
+        padding: 0;
+    }
+
+    .lcontainer {
+        background-color: #ffffff;
+        ;
+        border-radius: 5px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 100rem;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-container {
+        display: flex;
+    }
+
+    .left-container {
+        flex: 1;
+        height: 480px;
+        background-color:#eea16d;
+
+    }
+    .left-container p {
+        font-size: 4rem;
+    }
+    .right-container {
+        display: flex;
+        flex: 1;
+        height: 460px;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-container {
+        display: flex;
+        flex: 1;
+        height: 480px;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        ;
+    }
+
+    .left-inner-container p {
+        font-size: 2rem;
+    }
+
+    .right-inner-container {
+        width: 70%;
+        height: 80%;
+        text-align: center;
+    }
+
+    .left-inner-container {
+        height: 50%;
+        width: 80%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    input,
+    textarea {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: 1px solid #eea16d;
+    }
+
+    button {
+        border-radius: 20px;
+        border: 1px solid #eea16d;
+        background-color: #eea16d;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 0.3s ease-in;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+       transform: scale(1.24);
+    }
+
+    form p {
+        text-align: left;
+    }
+    input[placeholder]{
+        font-size: 1.6rem;
+    }
+    textarea[placeholder]{
+        font-size: 1.6rem;
+    }
+</style>
+
+<body>
+    <section id="banner">
+        <nav class="nav">
+            <img src="logo.png" alt="" class="logo" />
+            <ul class="navlink">
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#aboutus">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#" class="regis">REGISTER</a>
+        </nav>
+
+        <div class="bg">
+            <h1 class="welcome">
+                Help The
+                <span class="extra">NATURE , </span>
+            </h1>
+            <h1 class="welcome1">
+                And <span class="extra">NATURE , </span><br />
+                Will Help Too
+            </h1>
+            <br />
+            <button class="contribute">contribute &#8594;</button>
+        </div>
+
+        <div class="socialmedia">
+            <a href="" class="socialicons"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="socialicons"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="socialicons"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="socialicons"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <h1 style="
+          font-size: 8.3em;
+          text-align: right;
+          font-family: 'Bebas Neue';
+          letter-spacing: 0.5rem;
+          margin-right: 12rem;
+          margin-top: 5rem;
+          color: wheat;
+        ">
+            WHO ARE WE
+        </h1>
+        <br /><br /><br />
+        <h3 class="contentp">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+            eveniet recusandae ipsam cum explicabo? Fugit quia in minus tempore
+            alias velit beatae deleniti numquam, saepe quis exercitationem debitis
+            reprehenderit accusantium voluptates, quasi cupiditate eaque
+            perferendis, ducimus harum tempora. Iste perferendis earum cupiditate
+            quisquam aspernatur minima architecto a delectus adipisci dolorum Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
+        <img src="helpus.png" alt="" class="may" />
+        <br /><br />
+        <button class="lrnmore">KNOW MORE &nbsp;&#8594;</button>
+    </section>
+    <section id="contact">
+        <div class="lcontainer">
+            <div class="form-container">
+                <div class="left-container">
+                    <div class="left-inner-container">
+                        <h2>Let's Chat</h2><br><br>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil recusandae minima ratione
+                            excepturi cupiditate.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="right-inner-container">
+                        <form action="#">
+                            <h2 class="lg-view">Contact</h2>
+                            <h2 class="sm-view">Let's TALK</h2>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        
+                            <input type="phone" placeholder="Phone">
+                            <textarea rows="4" placeholder="Message"></textarea><br><br>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
