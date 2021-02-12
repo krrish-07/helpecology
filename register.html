@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER</title>
+
+  </head>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+  rel="stylesheet"
+/>
+  <style>
+        html{
+            font-size: 90%;
+        }
+        body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient( 100deg ,#3b5284 , #5BA8A0);
+        height: 41rem;
+
+    }
+    .Box{
+        padding: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 2px solid lavenderblush;
+        border-radius: 2rem;
+        text-align: center;
+        opacity: 0.6;
+    }
+    ::placeholder {
+        color: white !important;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .Box input[type = "text"],.Box input[ type = "Password"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+        border: 2px solid #03A9F4;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+
+    .Box input[type = "text"]:focus,.Box input[ type = "Password"]:focus{
+        width: 20rem;
+        border-color: #8BC34A;
+    }
+    
+   textarea{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
+        border: 2px solid #03A9F4;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24rem;
+        outline: none;
+        transition: 0.25s;
+    }
+
+    textarea:focus{
+        width: 20rem;
+        border-color: #8BC34A;
+    }
+    .Box input[Type="submit"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #8BC34A;
+        padding: 14px 40px;
+        outline: none;
+        font-size: 0.88rem;
+        color: white;
+        border-radius: 24px;
+        transition: 0.5s;
+        cursor: pointer;
+        font-family: 'Montserrat';
+
+    }
+    .Box input[type="submit"]:hover{
+        background: #b2e973;
+        color: black;
+        font-weight: 800;
+        transform: scale(1.197);
+        border-radius: 1rem;
+        border: none;
+    }
+    h1{
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        color: white;
+     font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    .bak{
+      color: lavenderblush;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.4s;
+    }
+    .bak:hover{
+      transform: translateY(-0.4rem);
+      
+    }
+  </style>
+  <body>
+    <form class="Box">
+      <h1>SIGN UP</h1>
+      <input type="text" placeholder="Name"  required/>
+      <input type="text" placeholder="Phone"  required/>
+      <input type="text" placeholder="email"  required/>
+<textarea name="txtarea" placeholder="Address" required></textarea>
+      <input
+        type="submit"
+        value="REGISTER">
+      <a href="index.html" class="bak" target="_blank">BACK</a>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: antiquewhite;
+      background-size: cover;
+      opacity: 0.8;
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      outline: none;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 94px;
+      right: 10%;
+      width: 270px;
+      height: 380px;
+      background-color: black;
+      color: white;
+      padding: 10px 0px 50px 40px;
+      border-radius: 5px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 13px;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    input {
+      height: 28px;
+      width: 180px;
+      border-radius: 2px;
+      border: none;
+    }
+
+    .month,
+    .year,
+    .cvc {
+      width: 50px;
+    }
+
+    .year {
+      margin-left: 10px;
+    }
+
+    .amount {
+      font-weight: 300;
+      font-size: 20px;
+      background-color: #8e44ad;
+      color: #aea8d3;
+      width: 90px;
+      height: 30px;
+      padding: 5px;
+      text-align: center;
+      display: block;
+    }
+
+    button {
+      height: 40px;
+      position: absolute;
+      margin-left: 48px;
+      margin-top: 80px;
+      background-color: #aea8d3;
+      border: none;
+      left: 0rem;
+      width: 14rem;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #8e44ad;
+      color: antiquewhite !important;
+    }
+    .but {
+      margin: 0;
+      padding: 0;
+      color: #8e44ad;
+      font-size: 16px;
+    }
+
+    .title {
+      font-size: 46px;
+      font-weight: 700;
+      display: inline-block;
+      color: #dadfe1;
+      padding-top: 350px;
+    }
+    .amount {
+      margin: 10px;
+      margin-left: -0px;
+      display: inline-block;
+      background-color: white !important;
+      width: 6rem;
+      height: 1.39rem;
+      margin-top: 18px;
+      padding-top: 2%;
+      padding-bottom: -2%;
+    }
+    .cvc {
+      margin-top: 5%;
+      width: 6rem;
+    }
+
+    ::placeholder {
+      text-align: center;
+      color: #211417;
+      font-size: small;
+    }
+    input {
+      outline: none;
+      text-align: center;
+      background-color: white !important;
+    }
+    .pay{
+      outline: none;
+    }
+  </style>
+  <body>
+      <div class="cont">
+          <img src="cont.svg" alt="" style="width: 30rem; height: auto; margin-top: 6rem; margin-left: 13rem; ">
+      </div>
+    <div class="wrapper">
+      <h4>Payment Information</h4>
+      <p>Name:</p>
+      <input type="text" class="name" placeholder="  John/Jane Doe" style="font-family: 'Montserrat';" />
+      <p style="font-family: 'Montserrat';">Card Number:</p>
+      <input type="text" class="card-numb" placeholder="  XXXX-XXXX-XXXXXXXX"  style="font-family: 'Montserrat';"/>
+      <p style="font-family: 'Montserrat';">Expires On:</p>
+      <input type="text" class="month" placeholder="  Month"  style="font-family: 'Montserrat'; width: 6rem"/>
+      <input type="text" class="year" placeholder="   Year"  style="font-family: 'Montserrat'; width: 6rem"/><br>     <input type="text" class="cvc" placeholder="CVV"  style="font-family: 'Montserrat';"/>&nbsp;&nbsp;
+      <input class="amount" type="number" placeholder="AMOUNT"  style="font-family: 'Montserrat';"/>
+     <a href="index.html"><button class="pay" style="font-family: 'Montserrat'; font-size: 16px; text-transform: uppercase;">contribute</button></a>
+    </div>
+  </body>
+</html>
